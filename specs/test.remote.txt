@@ -1,0 +1,33 @@
+# A Perforce Remote Specification.
+#
+#  RemoteID:    The remote identifier.
+#  Address:     The P4PORT used by the remote server.
+#  Owner:       The user who created this remote.
+#  RemoteUser:  The user to use when connecting to the remote server.
+#               May be overridden on fetch/push/login by --remote-user.
+#  Options:     Remote options:
+#                      [un]locked [no]compress [no]copyrcs
+#  Update:      The date this specification was last modified.
+#  Access:      The date of the last 'push/fetch' on this remote.
+#  Description: A short description of the remote server (optional).
+#  LastFetch:   The last changelist that was fetched.
+#  LastPush:    The last changelist that was pushed.
+#  DepotMap:    Lines to map local files to remote files.
+#  ArchiveLimits: Lines to limit the archives fetched (optional)
+#
+#                   See 'p4 help remote' for detailed information.
+
+RemoteID:       test-remote
+
+Owner:  program
+
+Options:        unlocked nocompress copyrcs
+
+Update: 2025/07/21 16:30:42
+
+Description:
+        Created by program.
+
+LastFetch:      default
+
+LastPush:       default
